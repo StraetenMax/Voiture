@@ -6,7 +6,7 @@ public class Voiture {
 	private String marque;
 	private double vitesse;
 	private int puissance;
-	private static int count;
+	public static int count;
 
 	//constructeurs
 	public Voiture(){
@@ -49,9 +49,9 @@ public class Voiture {
 	public void setPuissance(int zPuissance){
 		puissance = zPuissance;
 	}
-	//méthode
+	//méthodes
 	public String toString(){
-		return this.getMarque() + this.getVitesse() + this.getPuissance(); 
+		return "Voiture de marque "+this.getMarque()+" roule à une vitesse de "+this.getVitesse()+" km/h et délivre une puissance de "+this.getPuissance(); 
 	}
 }
 	
