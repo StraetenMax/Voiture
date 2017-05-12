@@ -21,5 +21,37 @@ public class Voiture {
 		vitesse = cVitesse;
 		puissance = cPuissance;
 	}
+	
+	//accesseurs et getteurs
+	public String getMarque(){
+		return marque;
+	}
+	public void setMarque(String zMarque){
+		marque = zMarque;
+	}
+	
+	public int getId(){
+		return id;
+	}
+	public void setId(){
+		id = ++count;
+	}
+	
+	public double getVitesse(){
+		return vitesse;	
+	}
+	public void setVitesse(double zVitesse){
+		vitesse = zVitesse;
+	}
+	public int getPuissance(){
+		return puissance;
+	}
+	public void setPuissance(int zPuissance){
+		puissance = zPuissance;
+	}
+	//méthode
+	public String toString(){
+		return this.getMarque() + this.getVitesse() + this.getPuissance(); 
+	}
 }
 	
